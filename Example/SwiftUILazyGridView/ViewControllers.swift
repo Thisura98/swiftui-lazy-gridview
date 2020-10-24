@@ -32,8 +32,10 @@ class ViewController: UIHostingController<AppView> {
 
 struct AppView: View{
     
+    private var viewModel = GridViewModel<String, String>(UIScreen.main.bounds.width - 10.0, spacing: 0.0)
+    
     var body: some View{
-        LazyGridView()
+        LazyGridView<String, String>(viewModel)
     }
     
 }

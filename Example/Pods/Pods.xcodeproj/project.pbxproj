@@ -17,6 +17,10 @@
 		C3775E5C3FE1DDEE4BD74D0B417F9319 /* SwiftUILazyGridView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 61B425BE4F713BBB5142309C5EED717B /* SwiftUILazyGridView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DF7B95D9B5659D3C6A1CA27340F12EF3 /* Pods-SwiftUILazyGridView_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E15301D8B4E9CE168877C0F754B14429 /* Pods-SwiftUILazyGridView_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E5949DE1C595B724AAA5D3CC02082773 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		F5691B3925446B2D0050D024 /* LazyGridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5691B3825446B2D0050D024 /* LazyGridViewModel.swift */; };
+		F5691B4B25446B6C0050D024 /* LazyGridViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5691B4A25446B6C0050D024 /* LazyGridViewItem.swift */; };
+		F5691B5D25446E6E0050D024 /* LazyGridViewItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5691B5C25446E6E0050D024 /* LazyGridViewItemModel.swift */; };
+		F5691B65254470370050D024 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5691B64254470370050D024 /* ActivityIndicator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +72,10 @@
 		E0D787835EEB005E7ADFDB37F840E689 /* Pods-SwiftUILazyGridView_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SwiftUILazyGridView_Example-dummy.m"; sourceTree = "<group>"; };
 		E15301D8B4E9CE168877C0F754B14429 /* Pods-SwiftUILazyGridView_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SwiftUILazyGridView_Example-umbrella.h"; sourceTree = "<group>"; };
 		E702B20244EA9225AB43E6B7E36B4047 /* SwiftUILazyGridView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftUILazyGridView-prefix.pch"; sourceTree = "<group>"; };
+		F5691B3825446B2D0050D024 /* LazyGridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LazyGridViewModel.swift; path = SwiftUILazyGridView/Classes/LazyGridViewModel.swift; sourceTree = "<group>"; };
+		F5691B4A25446B6C0050D024 /* LazyGridViewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LazyGridViewItem.swift; path = SwiftUILazyGridView/Classes/LazyGridViewItem.swift; sourceTree = "<group>"; };
+		F5691B5C25446E6E0050D024 /* LazyGridViewItemModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LazyGridViewItemModel.swift; path = SwiftUILazyGridView/Classes/LazyGridViewItemModel.swift; sourceTree = "<group>"; };
+		F5691B64254470370050D024 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ActivityIndicator.swift; path = SwiftUILazyGridView/Classes/ActivityIndicator.swift; sourceTree = "<group>"; };
 		F64C3B68F938DCBC6F165ADB53D688AE /* Pods-SwiftUILazyGridView_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SwiftUILazyGridView_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		FC683D75F76002F3A47947ACC82BD354 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -196,7 +204,11 @@
 		C722ECC7C374549C08699D27FB3F3ED8 /* SwiftUILazyGridView */ = {
 			isa = PBXGroup;
 			children = (
+				F5691B64254470370050D024 /* ActivityIndicator.swift */,
 				318CA8BB25A8F5D1349DE96837A7D6BC /* LazyGridView.swift */,
+				F5691B3825446B2D0050D024 /* LazyGridViewModel.swift */,
+				F5691B4A25446B6C0050D024 /* LazyGridViewItem.swift */,
+				F5691B5C25446E6E0050D024 /* LazyGridViewItemModel.swift */,
 				C66DA505619373897467725EAAF3AB33 /* Pod */,
 				AC1FF9638DD4297FC0EEDB587AC0E423 /* Support Files */,
 			);
@@ -381,6 +393,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				44A5D67B97C091618AA22D27DC34147C /* LazyGridView.swift in Sources */,
+				F5691B4B25446B6C0050D024 /* LazyGridViewItem.swift in Sources */,
+				F5691B5D25446E6E0050D024 /* LazyGridViewItemModel.swift in Sources */,
+				F5691B3925446B2D0050D024 /* LazyGridViewModel.swift in Sources */,
+				F5691B65254470370050D024 /* ActivityIndicator.swift in Sources */,
 				2446BD32DD32DAF05D0F7838D96093D6 /* SwiftUILazyGridView-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
