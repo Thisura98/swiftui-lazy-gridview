@@ -7,16 +7,31 @@
 
 Create a Grid View that allows items to be processed lazily before being displayed. This pod does not use `LazyVGrid` or `LazyHGrid`.
 
-##### Advantages #####
+<img src="https://raw.githubusercontent.com/Thisura98/swiftui-lazy-gridview/main/Documentation/main.png" width="600">
+
+## Installation
+
+SwiftUILazyGridView is available through [CocoaPods](https://cocoapods.org). To install
+it, simply add the following line to your Podfile:
+
+```ruby
+pod 'SwiftUILazyGridView'
+```
+
+## Advantages ##
 
 ✅ Data source is maintained by the Grid View's `ViewModel`, so yo don't have to fiddle with SwiftUI States
+
 ✅ Compatible with different orientations
+
 ✅ Variables column and item spacing
+
 ✅ Supports all iOS versions that are compatible with SwiftUI
 
-##### Unsupported Features #####
+## Unsupported Features ##
 
 ⏳ Lazy loading of items (only processing is supported) like SwiftUI's `LazyVGrid`
+
 ⏳ Fixed item size with variable columns
 
 ## Example
@@ -125,15 +140,6 @@ struct ContentView: View{
 
 - iOS 13.0+
 - Xcode 11
-
-## Installation
-
-SwiftUILazyGridView is available through [CocoaPods](https://cocoapods.org). To install
-it, simply add the following line to your Podfile:
-
-```ruby
-pod 'SwiftUILazyGridView'
-```
 
 ## Author
 
