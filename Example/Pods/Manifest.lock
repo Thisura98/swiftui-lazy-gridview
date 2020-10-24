@@ -1,0 +1,16 @@
+PODS:
+  - swiftui-lazy-gridview (0.1.0)
+
+DEPENDENCIES:
+  - swiftui-lazy-gridview (from `../`)
+
+EXTERNAL SOURCES:
+  swiftui-lazy-gridview:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  swiftui-lazy-gridview: eeced840c577cd4239988e2e9b4250803f43bab4
+
+PODFILE CHECKSUM: b16afbb707fa808cbd6dafd62b761dfd8d07b529
+
+COCOAPODS: 1.9.3

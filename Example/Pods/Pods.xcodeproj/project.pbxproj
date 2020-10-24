@@ -1,0 +1,772 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		10C11D354A1B858C5CC650975BC9698A /* Pods-swiftui-lazy-gridview_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9516301CE03E267346E664E47DD99DD2 /* Pods-swiftui-lazy-gridview_Example-dummy.m */; };
+		388A2630F31A7718DC920D1C59FE9FAC /* Pods-swiftui-lazy-gridview_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 31F6D8173C55E402AA8B6C9078124295 /* Pods-swiftui-lazy-gridview_Tests-dummy.m */; };
+		39286CEF64ABF50F4F4BB7591A1E36AC /* swiftui-lazy-gridview-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 55B1FFFA61BB59F3162B06E1575394E4 /* swiftui-lazy-gridview-dummy.m */; };
+		4A60A053FACCC5898D18FC33FB5F8103 /* Pods-swiftui-lazy-gridview_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D410A73B7147B4F26E1DCA90DBF3B156 /* Pods-swiftui-lazy-gridview_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		57BC86A9EC685F418C546171E2A7091C /* Pods-swiftui-lazy-gridview_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BC4E3B068AA6BF28D6A6AA73798AB441 /* Pods-swiftui-lazy-gridview_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5F10191EFA6E6B7A4E369CE764DC242A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		65345922C7B5D3FB8457E5E69A759D94 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9463C3263610C6A63BC268D507D1EBF7 /* ReplaceMe.swift */; };
+		75CE1E8155CBC4CE42B32F3514DAE13B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		CBE2285803D0E1A6DE9AB761C29F30ED /* swiftui-lazy-gridview-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 150849D882832F08DBAB00129E53E9A7 /* swiftui-lazy-gridview-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D1EB37AF49ECE78BBB3C0A3305C0D671 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		739AFE6D1830D99ADBE4697CB306E7E5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 992BE218E5530ABB6915D9E0DA9A2D5F;
+			remoteInfo = "swiftui-lazy-gridview";
+		};
+		9936D7FCFD459418B2AA991CC27089FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 557FB21E0027EEE0092BC1DF02CFB97B;
+			remoteInfo = "Pods-swiftui-lazy-gridview_Example";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0829CA419F9E392C0A16F0D07228BE81 /* Pods-swiftui-lazy-gridview_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-swiftui-lazy-gridview_Example-frameworks.sh"; sourceTree = "<group>"; };
+		0ED4544D6503076F015D7EC3DE9E1181 /* swiftui-lazy-gridview-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "swiftui-lazy-gridview-Info.plist"; sourceTree = "<group>"; };
+		12E45DC7C0A61A992E21BED3DFBD1AAF /* Pods_swiftui_lazy_gridview_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_swiftui_lazy_gridview_Tests.framework; path = "Pods-swiftui-lazy-gridview_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		150849D882832F08DBAB00129E53E9A7 /* swiftui-lazy-gridview-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "swiftui-lazy-gridview-umbrella.h"; sourceTree = "<group>"; };
+		31F6D8173C55E402AA8B6C9078124295 /* Pods-swiftui-lazy-gridview_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-swiftui-lazy-gridview_Tests-dummy.m"; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		38C2D43B28333BD37554AB86A7E8DC24 /* Pods-swiftui-lazy-gridview_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-swiftui-lazy-gridview_Tests.modulemap"; sourceTree = "<group>"; };
+		49C24ABB89B8E4CD26B6FCC20D8AAEF3 /* Pods-swiftui-lazy-gridview_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-swiftui-lazy-gridview_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		5158A0CED1B0FC6D1295AAAB5F0C1C59 /* Pods-swiftui-lazy-gridview_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-swiftui-lazy-gridview_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		546FDB4811A51DA688AA2935DF023A5A /* Pods-swiftui-lazy-gridview_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-swiftui-lazy-gridview_Example-Info.plist"; sourceTree = "<group>"; };
+		55B1FFFA61BB59F3162B06E1575394E4 /* swiftui-lazy-gridview-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "swiftui-lazy-gridview-dummy.m"; sourceTree = "<group>"; };
+		651102A1A582968EE2A148074B8EEA0D /* Pods-swiftui-lazy-gridview_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-swiftui-lazy-gridview_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		6FB213BCF820A03183FD12595C146553 /* Pods-swiftui-lazy-gridview_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-swiftui-lazy-gridview_Example.release.xcconfig"; sourceTree = "<group>"; };
+		84245A58187BFC9C6AB3873A32B26306 /* Pods-swiftui-lazy-gridview_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-swiftui-lazy-gridview_Example.modulemap"; sourceTree = "<group>"; };
+		8DDD254A2DD9BCC242073FC11B2DC75A /* Pods-swiftui-lazy-gridview_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-swiftui-lazy-gridview_Tests-Info.plist"; sourceTree = "<group>"; };
+		9463C3263610C6A63BC268D507D1EBF7 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = "swiftui-lazy-gridview/Classes/ReplaceMe.swift"; sourceTree = "<group>"; };
+		9516301CE03E267346E664E47DD99DD2 /* Pods-swiftui-lazy-gridview_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-swiftui-lazy-gridview_Example-dummy.m"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A89122E630CD0CF3B7B588D2A2DAD65D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		A89D27F12139F82E204A5B3E1FC20103 /* swiftui-lazy-gridview.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "swiftui-lazy-gridview.modulemap"; sourceTree = "<group>"; };
+		AB588339E190CB2CD30C59EFA213356C /* swiftui-lazy-gridview.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "swiftui-lazy-gridview.debug.xcconfig"; sourceTree = "<group>"; };
+		AE6647E5B3DBE014A12CDC1ABDAC0C72 /* swiftui-lazy-gridview-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "swiftui-lazy-gridview-prefix.pch"; sourceTree = "<group>"; };
+		AFEA84013E7EF1B27CC190296BB6B166 /* swiftui-lazy-gridview.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = "swiftui-lazy-gridview.podspec"; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BC4E3B068AA6BF28D6A6AA73798AB441 /* Pods-swiftui-lazy-gridview_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-swiftui-lazy-gridview_Tests-umbrella.h"; sourceTree = "<group>"; };
+		C76FE9072C48AEC7A7119D397C0A0D92 /* Pods-swiftui-lazy-gridview_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-swiftui-lazy-gridview_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		CAE223CD8B23240A09123066E03F90C5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		D410A73B7147B4F26E1DCA90DBF3B156 /* Pods-swiftui-lazy-gridview_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-swiftui-lazy-gridview_Example-umbrella.h"; sourceTree = "<group>"; };
+		DE397ECBCB670D807213FAC3EB2301F3 /* Pods-swiftui-lazy-gridview_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-swiftui-lazy-gridview_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E4141BEC64D8BEF7C3E443BD889C0783 /* swiftui-lazy-gridview.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "swiftui-lazy-gridview.release.xcconfig"; sourceTree = "<group>"; };
+		E4AF6B0B9E01E5E512801D327F88E7E9 /* swiftui_lazy_gridview.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = swiftui_lazy_gridview.framework; path = "swiftui-lazy-gridview.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC3A343698B2300B34ED4B0A868A3E0C /* Pods-swiftui-lazy-gridview_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-swiftui-lazy-gridview_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		F3EC2FBC20174014946470127CD5218C /* Pods_swiftui_lazy_gridview_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_swiftui_lazy_gridview_Example.framework; path = "Pods-swiftui-lazy-gridview_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD0A44D0904F1E66EBA7EE7BE2165DAF /* Pods-swiftui-lazy-gridview_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-swiftui-lazy-gridview_Example.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3A3BBD5F9D2F30E1DF13268D44BF6A2F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F10191EFA6E6B7A4E369CE764DC242A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8210A55FEB7E24A018C23558AD74570E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1EB37AF49ECE78BBB3C0A3305C0D671 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA4F13F448CD70BF5BD9FE2B9D7FB363 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75CE1E8155CBC4CE42B32F3514DAE13B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		55D0862C16CCEAAAEF75CE5AA550B19C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F3EC2FBC20174014946470127CD5218C /* Pods_swiftui_lazy_gridview_Example.framework */,
+				12E45DC7C0A61A992E21BED3DFBD1AAF /* Pods_swiftui_lazy_gridview_Tests.framework */,
+				E4AF6B0B9E01E5E512801D327F88E7E9 /* swiftui_lazy_gridview.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		736BDBBA62A82EDF4F6A38378EF7322E /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				CAE223CD8B23240A09123066E03F90C5 /* LICENSE */,
+				A89122E630CD0CF3B7B588D2A2DAD65D /* README.md */,
+				AFEA84013E7EF1B27CC190296BB6B166 /* swiftui-lazy-gridview.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		76DC695DF01E7BBB3B283DEBCA1611E3 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A89D27F12139F82E204A5B3E1FC20103 /* swiftui-lazy-gridview.modulemap */,
+				55B1FFFA61BB59F3162B06E1575394E4 /* swiftui-lazy-gridview-dummy.m */,
+				0ED4544D6503076F015D7EC3DE9E1181 /* swiftui-lazy-gridview-Info.plist */,
+				AE6647E5B3DBE014A12CDC1ABDAC0C72 /* swiftui-lazy-gridview-prefix.pch */,
+				150849D882832F08DBAB00129E53E9A7 /* swiftui-lazy-gridview-umbrella.h */,
+				AB588339E190CB2CD30C59EFA213356C /* swiftui-lazy-gridview.debug.xcconfig */,
+				E4141BEC64D8BEF7C3E443BD889C0783 /* swiftui-lazy-gridview.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/swiftui-lazy-gridview";
+			sourceTree = "<group>";
+		};
+		934DEB36DB4FD7916602C13D85DF88C6 /* swiftui-lazy-gridview */ = {
+			isa = PBXGroup;
+			children = (
+				9463C3263610C6A63BC268D507D1EBF7 /* ReplaceMe.swift */,
+				736BDBBA62A82EDF4F6A38378EF7322E /* Pod */,
+				76DC695DF01E7BBB3B283DEBCA1611E3 /* Support Files */,
+			);
+			name = "swiftui-lazy-gridview";
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		9B9A711ADABA8C7AAB120BF7459CD62E /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				934DEB36DB4FD7916602C13D85DF88C6 /* swiftui-lazy-gridview */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		BE7E8B123BDC0AB088BFB029F1CE63F9 /* Pods-swiftui-lazy-gridview_Example */ = {
+			isa = PBXGroup;
+			children = (
+				84245A58187BFC9C6AB3873A32B26306 /* Pods-swiftui-lazy-gridview_Example.modulemap */,
+				C76FE9072C48AEC7A7119D397C0A0D92 /* Pods-swiftui-lazy-gridview_Example-acknowledgements.markdown */,
+				49C24ABB89B8E4CD26B6FCC20D8AAEF3 /* Pods-swiftui-lazy-gridview_Example-acknowledgements.plist */,
+				9516301CE03E267346E664E47DD99DD2 /* Pods-swiftui-lazy-gridview_Example-dummy.m */,
+				0829CA419F9E392C0A16F0D07228BE81 /* Pods-swiftui-lazy-gridview_Example-frameworks.sh */,
+				546FDB4811A51DA688AA2935DF023A5A /* Pods-swiftui-lazy-gridview_Example-Info.plist */,
+				D410A73B7147B4F26E1DCA90DBF3B156 /* Pods-swiftui-lazy-gridview_Example-umbrella.h */,
+				FD0A44D0904F1E66EBA7EE7BE2165DAF /* Pods-swiftui-lazy-gridview_Example.debug.xcconfig */,
+				6FB213BCF820A03183FD12595C146553 /* Pods-swiftui-lazy-gridview_Example.release.xcconfig */,
+			);
+			name = "Pods-swiftui-lazy-gridview_Example";
+			path = "Target Support Files/Pods-swiftui-lazy-gridview_Example";
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				9B9A711ADABA8C7AAB120BF7459CD62E /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				55D0862C16CCEAAAEF75CE5AA550B19C /* Products */,
+				E714127CAA496507DC81CF98F61BC336 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E56A9FC4E1BA52FE6DD6654CA0417FBF /* Pods-swiftui-lazy-gridview_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				38C2D43B28333BD37554AB86A7E8DC24 /* Pods-swiftui-lazy-gridview_Tests.modulemap */,
+				DE397ECBCB670D807213FAC3EB2301F3 /* Pods-swiftui-lazy-gridview_Tests-acknowledgements.markdown */,
+				651102A1A582968EE2A148074B8EEA0D /* Pods-swiftui-lazy-gridview_Tests-acknowledgements.plist */,
+				31F6D8173C55E402AA8B6C9078124295 /* Pods-swiftui-lazy-gridview_Tests-dummy.m */,
+				8DDD254A2DD9BCC242073FC11B2DC75A /* Pods-swiftui-lazy-gridview_Tests-Info.plist */,
+				BC4E3B068AA6BF28D6A6AA73798AB441 /* Pods-swiftui-lazy-gridview_Tests-umbrella.h */,
+				EC3A343698B2300B34ED4B0A868A3E0C /* Pods-swiftui-lazy-gridview_Tests.debug.xcconfig */,
+				5158A0CED1B0FC6D1295AAAB5F0C1C59 /* Pods-swiftui-lazy-gridview_Tests.release.xcconfig */,
+			);
+			name = "Pods-swiftui-lazy-gridview_Tests";
+			path = "Target Support Files/Pods-swiftui-lazy-gridview_Tests";
+			sourceTree = "<group>";
+		};
+		E714127CAA496507DC81CF98F61BC336 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BE7E8B123BDC0AB088BFB029F1CE63F9 /* Pods-swiftui-lazy-gridview_Example */,
+				E56A9FC4E1BA52FE6DD6654CA0417FBF /* Pods-swiftui-lazy-gridview_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		69D81F22847C6B540E918C6D17E94BF4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57BC86A9EC685F418C546171E2A7091C /* Pods-swiftui-lazy-gridview_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80E550076782FDAB051D482237047801 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A60A053FACCC5898D18FC33FB5F8103 /* Pods-swiftui-lazy-gridview_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		942A96E33D2AB2F387FCD957D2500576 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBE2285803D0E1A6DE9AB761C29F30ED /* swiftui-lazy-gridview-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		31DCDD92A24E70D1B44650BF1396B87E /* Pods-swiftui-lazy-gridview_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F14A0EA5FB248052E9CCE479E64E887 /* Build configuration list for PBXNativeTarget "Pods-swiftui-lazy-gridview_Tests" */;
+			buildPhases = (
+				69D81F22847C6B540E918C6D17E94BF4 /* Headers */,
+				8CEF26597F0005B77073A1857E9E5110 /* Sources */,
+				8210A55FEB7E24A018C23558AD74570E /* Frameworks */,
+				D41AAF6562956F9A88C86E872EC74153 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AC441897DD255A30BAE9BA3BDEA7A928 /* PBXTargetDependency */,
+			);
+			name = "Pods-swiftui-lazy-gridview_Tests";
+			productName = "Pods-swiftui-lazy-gridview_Tests";
+			productReference = 12E45DC7C0A61A992E21BED3DFBD1AAF /* Pods_swiftui_lazy_gridview_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		557FB21E0027EEE0092BC1DF02CFB97B /* Pods-swiftui-lazy-gridview_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C46EEAAB41C1D3EE9D3AC663A8C0AD9 /* Build configuration list for PBXNativeTarget "Pods-swiftui-lazy-gridview_Example" */;
+			buildPhases = (
+				80E550076782FDAB051D482237047801 /* Headers */,
+				DD997DFB3A0625626672585B1C43FBAF /* Sources */,
+				BA4F13F448CD70BF5BD9FE2B9D7FB363 /* Frameworks */,
+				E953BF0265C9133953D5F19F9978B36B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				88BE06B44242D9B6E43396B1945D157B /* PBXTargetDependency */,
+			);
+			name = "Pods-swiftui-lazy-gridview_Example";
+			productName = "Pods-swiftui-lazy-gridview_Example";
+			productReference = F3EC2FBC20174014946470127CD5218C /* Pods_swiftui_lazy_gridview_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		992BE218E5530ABB6915D9E0DA9A2D5F /* swiftui-lazy-gridview */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0F4E590D6868E9F617A66AD69E9D3A55 /* Build configuration list for PBXNativeTarget "swiftui-lazy-gridview" */;
+			buildPhases = (
+				942A96E33D2AB2F387FCD957D2500576 /* Headers */,
+				E2F4969B3659E785EFE7148AEDF01DBC /* Sources */,
+				3A3BBD5F9D2F30E1DF13268D44BF6A2F /* Frameworks */,
+				BDF2DCE81990219B80178E497AF0AA41 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "swiftui-lazy-gridview";
+			productName = "swiftui-lazy-gridview";
+			productReference = E4AF6B0B9E01E5E512801D327F88E7E9 /* swiftui_lazy_gridview.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 55D0862C16CCEAAAEF75CE5AA550B19C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				557FB21E0027EEE0092BC1DF02CFB97B /* Pods-swiftui-lazy-gridview_Example */,
+				31DCDD92A24E70D1B44650BF1396B87E /* Pods-swiftui-lazy-gridview_Tests */,
+				992BE218E5530ABB6915D9E0DA9A2D5F /* swiftui-lazy-gridview */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BDF2DCE81990219B80178E497AF0AA41 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D41AAF6562956F9A88C86E872EC74153 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E953BF0265C9133953D5F19F9978B36B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8CEF26597F0005B77073A1857E9E5110 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				388A2630F31A7718DC920D1C59FE9FAC /* Pods-swiftui-lazy-gridview_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD997DFB3A0625626672585B1C43FBAF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10C11D354A1B858C5CC650975BC9698A /* Pods-swiftui-lazy-gridview_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2F4969B3659E785EFE7148AEDF01DBC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65345922C7B5D3FB8457E5E69A759D94 /* ReplaceMe.swift in Sources */,
+				39286CEF64ABF50F4F4BB7591A1E36AC /* swiftui-lazy-gridview-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		88BE06B44242D9B6E43396B1945D157B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "swiftui-lazy-gridview";
+			target = 992BE218E5530ABB6915D9E0DA9A2D5F /* swiftui-lazy-gridview */;
+			targetProxy = 739AFE6D1830D99ADBE4697CB306E7E5 /* PBXContainerItemProxy */;
+		};
+		AC441897DD255A30BAE9BA3BDEA7A928 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-swiftui-lazy-gridview_Example";
+			target = 557FB21E0027EEE0092BC1DF02CFB97B /* Pods-swiftui-lazy-gridview_Example */;
+			targetProxy = 9936D7FCFD459418B2AA991CC27089FC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		094DE82D9B795C2FD8C7AA9D52067C61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD0A44D0904F1E66EBA7EE7BE2165DAF /* Pods-swiftui-lazy-gridview_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-swiftui-lazy-gridview_Example/Pods-swiftui-lazy-gridview_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-swiftui-lazy-gridview_Example/Pods-swiftui-lazy-gridview_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1794492F2FA38C014442D0A6F5480E7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5158A0CED1B0FC6D1295AAAB5F0C1C59 /* Pods-swiftui-lazy-gridview_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-swiftui-lazy-gridview_Tests/Pods-swiftui-lazy-gridview_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-swiftui-lazy-gridview_Tests/Pods-swiftui-lazy-gridview_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5352E866CEA12EEECCEB53762A78FDEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC3A343698B2300B34ED4B0A868A3E0C /* Pods-swiftui-lazy-gridview_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-swiftui-lazy-gridview_Tests/Pods-swiftui-lazy-gridview_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-swiftui-lazy-gridview_Tests/Pods-swiftui-lazy-gridview_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6BE1F0F2DF9E9AB828C816C707E9C5D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB588339E190CB2CD30C59EFA213356C /* swiftui-lazy-gridview.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/swiftui-lazy-gridview/swiftui-lazy-gridview-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/swiftui-lazy-gridview/swiftui-lazy-gridview-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/swiftui-lazy-gridview/swiftui-lazy-gridview.modulemap";
+				PRODUCT_MODULE_NAME = swiftui_lazy_gridview;
+				PRODUCT_NAME = swiftui_lazy_gridview;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B0087CB4594321EF41619F3181FE120E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		B8BCBD0110C2658BB5DAADB9B7D97B92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		E5EBE473D58EEBA0E79A9F3A9163D01B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6FB213BCF820A03183FD12595C146553 /* Pods-swiftui-lazy-gridview_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-swiftui-lazy-gridview_Example/Pods-swiftui-lazy-gridview_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-swiftui-lazy-gridview_Example/Pods-swiftui-lazy-gridview_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EEC25F8E30E2830B97EC686B5A48AAA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4141BEC64D8BEF7C3E443BD889C0783 /* swiftui-lazy-gridview.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/swiftui-lazy-gridview/swiftui-lazy-gridview-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/swiftui-lazy-gridview/swiftui-lazy-gridview-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/swiftui-lazy-gridview/swiftui-lazy-gridview.modulemap";
+				PRODUCT_MODULE_NAME = swiftui_lazy_gridview;
+				PRODUCT_NAME = swiftui_lazy_gridview;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0F4E590D6868E9F617A66AD69E9D3A55 /* Build configuration list for PBXNativeTarget "swiftui-lazy-gridview" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BE1F0F2DF9E9AB828C816C707E9C5D8 /* Debug */,
+				EEC25F8E30E2830B97EC686B5A48AAA0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C46EEAAB41C1D3EE9D3AC663A8C0AD9 /* Build configuration list for PBXNativeTarget "Pods-swiftui-lazy-gridview_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				094DE82D9B795C2FD8C7AA9D52067C61 /* Debug */,
+				E5EBE473D58EEBA0E79A9F3A9163D01B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8BCBD0110C2658BB5DAADB9B7D97B92 /* Debug */,
+				B0087CB4594321EF41619F3181FE120E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8F14A0EA5FB248052E9CCE479E64E887 /* Build configuration list for PBXNativeTarget "Pods-swiftui-lazy-gridview_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5352E866CEA12EEECCEB53762A78FDEF /* Debug */,
+				1794492F2FA38C014442D0A6F5480E7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
