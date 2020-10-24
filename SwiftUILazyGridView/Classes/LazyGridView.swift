@@ -81,12 +81,16 @@ public struct LazyGridView<Input: Any, Output: Any>: View{
             
             ScrollView {
                 VStack {
-                    HStack {
-                        ActivityIndicator(isAnimating: true, style: .medium)
-                        Text("Loading...").font(.system(size: 8.0))
-                    }.shown(model.isProcessing).transition(.asymmetric(insertion: .scale, removal: .opacity))
                     
-                    Text("No items to preview").font(.system(size: 8.0)).shown(!model.isProcessing && model.noItemsToShow).transition(.asymmetric(insertion: .scale, removal: .opacity))
+                    if model.isProcessing{
+                        HStack {
+                            ActivityIndicator(isAnimating: true, style: .medium)
+                            Text("Loading...").font(.system(size: 8.0))
+                        }.transition(.asymmetric(insertion: .scale, removal: .opacity))
+                    }
+                    else if model.noItemsToShow{
+                        Text("No items to preview").font(.system(size: 8.0)).transition(.asymmetric(insertion: .scale, removal: .opacity))
+                    }
                     
                     ForEach(0..<model.vStacksCount, id: \.self){ (i: Int) in
                         HStack(spacing: model.spacing / 2.0) {

@@ -28,6 +28,12 @@ class NavController: UINavigationController{
 
 class ViewController: UIHostingController<AppView> {
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        self.title = "LazyGridView Example"
+    }
+    
 }
 
 struct CustomObject{
@@ -57,7 +63,14 @@ struct AppView: View{
             
         } _: { (post: CustomObject) -> AnyView in
             // View Builder
-            return AnyView(Text(post.text).background( post.lateInitialized ? Color.red : Color.yellow ))
+            return AnyView(ZStack(content: {
+                Image("Example Image").resizable()
+                Text(post.text)
+                    .padding(EdgeInsets(top: 2.0, leading: 6.0, bottom: 2.0, trailing: 6.0))
+                    .foregroundColor( post.lateInitialized ? Color.red : Color.yellow )
+                    .background(Color.white)
+                    .cornerRadius(8.0)
+            }))
         } _: { (clickedItem) in
             guard let index = viewModel.getAllItems().firstIndex (where: { $0?.id == clickedItem?.id }) else { return }
             print("You clicked the item at index, \(index)")
