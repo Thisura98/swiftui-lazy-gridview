@@ -1,0 +1,22 @@
+{
+  "name": "SwiftUILazyGridView",
+  "version": "0.1.0",
+  "summary": "A short description of SwiftUILazyGridView.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/thisura1998@gmail.com/SwiftUILazyGridView",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "thisura1998@gmail.com": "thisura@bhasha.lk"
+  },
+  "source": {
+    "git": "https://github.com/thisura1998@gmail.com/SwiftUILazyGridView.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "SwiftUILazyGridView/Classes/**/*"
+}

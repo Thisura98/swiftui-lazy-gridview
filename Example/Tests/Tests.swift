@@ -1,5 +1,5 @@
 import XCTest
-import swiftui-lazy-gridview
+import SwiftUILazyGridView
 
 class Tests: XCTestCase {
     

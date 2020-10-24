@@ -1,16 +1,16 @@
 PODS:
-  - swiftui-lazy-gridview (0.1.0)
+  - SwiftUILazyGridView (0.1.0)
 
 DEPENDENCIES:
-  - swiftui-lazy-gridview (from `../`)
+  - SwiftUILazyGridView (from `../`)
 
 EXTERNAL SOURCES:
-  swiftui-lazy-gridview:
+  SwiftUILazyGridView:
     :path: "../"
 
 SPEC CHECKSUMS:
-  swiftui-lazy-gridview: eeced840c577cd4239988e2e9b4250803f43bab4
+  SwiftUILazyGridView: 0ee446a85a2a0f63c05c36a6c9c77f38a80150cb
 
-PODFILE CHECKSUM: b16afbb707fa808cbd6dafd62b761dfd8d07b529
+PODFILE CHECKSUM: b3f1f1f9533d7b8db033068c0349f3fd6d3be611
 
 COCOAPODS: 1.9.3

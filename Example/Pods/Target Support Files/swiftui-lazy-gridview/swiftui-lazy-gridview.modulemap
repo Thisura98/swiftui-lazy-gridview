@@ -1,6 +1,0 @@
-framework module swiftui_lazy_gridview {
-  umbrella header "swiftui-lazy-gridview-umbrella.h"
-
-  export *
-  module * { export * }
-}

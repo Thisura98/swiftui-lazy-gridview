@@ -1,6 +1,0 @@
-framework module Pods_swiftui_lazy_gridview_Tests {
-  umbrella header "Pods-swiftui-lazy-gridview_Tests-umbrella.h"
-
-  export *
-  module * { export * }
-}

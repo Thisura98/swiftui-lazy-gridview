@@ -4,17 +4,17 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Pods-swiftui-lazy-gridview_Example.xcscheme</key>
+		<key>Pods-SwiftUILazyGridView_Example.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-swiftui-lazy-gridview_Tests.xcscheme</key>
+		<key>Pods-SwiftUILazyGridView_Tests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>swiftui-lazy-gridview.xcscheme</key>
+		<key>SwiftUILazyGridView.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>

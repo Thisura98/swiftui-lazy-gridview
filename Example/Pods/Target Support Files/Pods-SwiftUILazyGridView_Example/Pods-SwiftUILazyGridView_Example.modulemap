@@ -1,0 +1,6 @@
+framework module Pods_SwiftUILazyGridView_Example {
+  umbrella header "Pods-SwiftUILazyGridView_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

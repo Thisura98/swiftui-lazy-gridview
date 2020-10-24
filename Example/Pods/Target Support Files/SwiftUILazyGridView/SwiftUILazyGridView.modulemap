@@ -1,0 +1,6 @@
+framework module SwiftUILazyGridView {
+  umbrella header "SwiftUILazyGridView-umbrella.h"
+
+  export *
+  module * { export * }
+}

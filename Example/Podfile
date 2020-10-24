@@ -1,9 +1,9 @@
 use_frameworks!
 
-target 'swiftui-lazy-gridview_Example' do
-  pod 'swiftui-lazy-gridview', :path => '../'
+target 'SwiftUILazyGridView_Example' do
+  pod 'SwiftUILazyGridView', :path => '../'
 
-  target 'swiftui-lazy-gridview_Tests' do
+  target 'SwiftUILazyGridView_Tests' do
     inherit! :search_paths
 
     
