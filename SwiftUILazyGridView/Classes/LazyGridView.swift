@@ -8,22 +8,45 @@
 import Foundation
 import SwiftUI
 
+/**
+ LazyGridView with input and output data types.
+ 
+ The `Input` and `Output` types represent the raw data format
+ and the processed data format respectively. For example,
+ if items are added as `String`s, you are given the chance
+ to process the items into `Ints`s before being displayed.
+ 
+ This is what provides the "Lazy" behavior. The behavior is __NOT__
+ identical to UIKit's CollectionView. Rather, it is a simple Grid
+ that allows content __within__ each cell to be lazily loaded.
+ */
 public struct LazyGridView<Input: Any, Output: Any>: View{
     
-    public typealias ItemModel = GridViewItemModel<Input, Output>
-    public typealias ItemView = GridViewItem<Input, Output>
-    public typealias GridModel = GridViewModel<Input, Output>
+    public typealias ItemModel = LazyGridViewItemModel<Input, Output>
+    public typealias ItemView = LazyGridViewItem<Input, Output>
+    public typealias GridModel = LazyGridViewModel<Input, Output>
     
     @ObservedObject var model: GridModel
     
     internal var viewBuilderBlock: ((_ data: Output) -> AnyView)!
-    internal var onClickAction: ((_ model: ItemModel) -> ())?
+    internal var onClickAction: ((_ model: Input?) -> ())?
     
+    /**
+     Initialize a LazyGridView instance.
+     
+     - parameter model: Object that holds the items of the grid
+     - parameter processItems: Closure that processes items. This block is called from a background
+     thread. Do not perform layout changes here. Simply process the passed in item if needed. Otherwise,
+     return the same item to the callback.
+     - parameter viewBuilder: Closure that builds items for display This block is called from the main
+     thread.
+     - parameter onClick: Closure when a cell is clicked.
+     */
     public init(
-    _ model: GridViewModel<Input, Output>,
+    _ model: LazyGridViewModel<Input, Output>,
     _ processItems: GridModel.ProcessFunction? = nil,
     _ viewBuilder: ((_ data: Output) -> AnyView)? = nil,
-    _ onClick: ((_ model: ItemModel) -> ())? = nil){
+    _ onClick: ((_ model: Input?) -> ())? = nil){
         
         self.model = model
         
@@ -109,62 +132,6 @@ public struct LazyGridView<Input: Any, Output: Any>: View{
                             }
                         }.frame(maxWidth: .infinity).shown(!model.isProcessing && !model.noItemsToShow).transition(.asymmetric(insertion: .scale, removal: .opacity))
                     }
-                    /*
-                    if model.isProcessing {
-                        HStack {
-                            ActivityIndicator(isAnimating: true, style: .medium)
-                            Text("Loading...").font(.system(size: 8.0))
-                        }
-                    }
-                    else if model.noItemsToShow{
-                        Text("No items to preview").font(.system(size: 8.0))
-                    }
-                    else{
-                        ForEach(0..<model.vStacksCount, id: \.self){ (i: Int) in
-                            HStack(spacing: model.spacing / 2.0) {
-                                if (model.vStackIndexHalfFilled == i){
-                                    // Last row with half filled items
-                                    ForEach(0..<model.vStackHalfFilledItemCount, id: \.self){ (j: Int) in
-                                        if let item = model.getItem(atRow: i, column: j){
-                                            ItemView(
-                                                model: item,
-                                                size: model.itemViewWidth,
-                                                onClick: { (onClickModel) in
-                                                    self.onClickAction?(onClickModel)
-                                                },
-                                                viewBuilderBlock: { (model) in
-                                                    return self.getViewWithModel(model)
-                                                }
-                                            ).frame(width: model.itemViewWidth, height: model.itemViewWidth)
-                                        }
-                                        else{
-                                            EmptyView()
-                                        }
-                                    }
-                                }
-                                else{
-                                    // All other rows
-                                    ForEach(0..<model.columns, id: \.self){ (j: Int) in
-                                        if let item = model.getItem(atRow: i, column: j){
-                                            ItemView(
-                                                model: item,
-                                                size: model.itemViewWidth,
-                                                onClick: { (onClickModel) in
-                                                    self.onClickAction?(onClickModel)
-                                                },
-                                                viewBuilderBlock: { (model) in
-                                                    return self.getViewWithModel(model)
-                                                }
-                                            ).frame(width: model.itemViewWidth, height: model.itemViewWidth)
-                                        }
-                                        else{
-                                            EmptyView()
-                                        }
-                                    }
-                                }
-                            }.frame(maxWidth: .infinity)
-                        }
-                    }*/
                 }.frame(maxWidth: .infinity)
             }
         }

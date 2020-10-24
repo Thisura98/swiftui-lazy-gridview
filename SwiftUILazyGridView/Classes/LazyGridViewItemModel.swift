@@ -8,7 +8,10 @@
 import SwiftUI
 import Foundation
 
-public class GridViewItemModel<Input: Any, Output: Any>: ObservableObject{
+/**
+ The model for a `LazyGridViewItem` View.
+ */
+public class LazyGridViewItemModel<Input: Any, Output: Any>: ObservableObject{
     
     enum ViewState{
         case loading, noContent, contentShowing
@@ -34,15 +37,6 @@ public class GridViewItemModel<Input: Any, Output: Any>: ObservableObject{
         
         setSelfStateInMain(.loading)
         
-        // let filePath = TellaFileManager.fileNameToPath(name: fileName)
-        // data = TellaFileManager.recoverAndDecrypt(filePath, privKey)
-        
-        // Further processing
-        /*
-        if type == .IMAGE{
-            data = getPreviewImage(data)
-        }*/
-        
         if data == nil{
             setSelfStateInMain(.noContent)
         }
@@ -50,26 +44,4 @@ public class GridViewItemModel<Input: Any, Output: Any>: ObservableObject{
             setSelfStateInMain(.contentShowing)
         }
     }
-    
-    /*
-    private func getPreviewImage(_ imageData: Data?) -> Data? {
-        guard let imageData = imageData else { return nil }
-        guard let image = TellaFileManager.recoverImage(imageData) else { return nil }
-        let oldWidth = image.size.width;
-        let oldHeight = image.size.height;
-        let fixedScaleFactor: CGFloat = 0.05
-        let scaleFactor = fixedScaleFactor
-        
-        let newHeight = oldHeight * scaleFactor;
-        let newWidth = oldWidth * scaleFactor;
-        let newSize = CGSize(width: newWidth, height: newHeight)
-        
-        UIGraphicsBeginImageContextWithOptions(newSize,false,UIScreen.main.scale);
-        
-        image.draw(in: CGRect(x: 0, y: 0, width: newSize.width, height: newSize.height));
-        let newImage = UIGraphicsGetImageFromCurrentImageContext();
-        UIGraphicsEndImageContext();
-        
-        return newImage?.jpegData(compressionQuality: 0.0)
-    }*/
 }

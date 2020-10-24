@@ -31,20 +31,20 @@ class ViewController: UIHostingController<AppView> {
 }
 
 struct CustomObject{
+    var id: Int
     var lateInitialized: Bool
     var text: String
 }
 
 struct AppView: View{
     
-    private var viewModel = GridViewModel<CustomObject, CustomObject>(UIScreen.main.bounds.width - 10.0, spacing: 0.0)
+    private var viewModel = LazyGridViewModel<CustomObject, CustomObject>(UIScreen.main.bounds.width - 10.0, spacing: 0.0)
     
     init(){
         startLongRunningTask()
     }
     
     var body: some View{
-        // LazyGridView<String, String>(viewModel)
         LazyGridView<CustomObject, CustomObject>(viewModel) { (input, callback) in
             // Do some fake processing on a background thread
             DispatchQueue.global().async {
@@ -56,25 +56,31 @@ struct AppView: View{
             }
             
         } _: { (post: CustomObject) -> AnyView in
+            // View Builder
             return AnyView(Text(post.text).background( post.lateInitialized ? Color.red : Color.yellow ))
         } _: { (clickedItem) in
-            print(clickedItem)
+            guard let index = viewModel.getAllItems().firstIndex (where: { $0?.id == clickedItem?.id }) else { return }
+            print("You clicked the item at index, \(index)")
             self.addRandomItem()
         }
 
     }
     
+    /**
+     Setup some items
+     */
     private mutating func startLongRunningTask(){
-        
-        for _ in 0..<30{
-            viewModel.addItem(CustomObject(lateInitialized: false, text: "Initial"))
+        for i in 0..<30{
+            viewModel.addItem(CustomObject(id: i, lateInitialized: false, text: "Initial"))
         }
-        
     }
     
+    /**
+     Action when a Grid Item is clicked
+     */
     private func addRandomItem(){
         let randomPos = Int(arc4random_uniform(UInt32(viewModel.getNumberOfItems())))
-        viewModel.addItem(CustomObject(lateInitialized: true, text: "On Click"), at: randomPos)
+        viewModel.addItem(CustomObject(id: viewModel.getNumberOfItems(), lateInitialized: true, text: "On Click"), at: randomPos)
     }
     
     /*
