@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		05CF2E7F7AF842D27143EFFC29190C78 /* SwiftUILazyGridView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A1C23590B50DAD843F3DA8B72D386C98 /* SwiftUILazyGridView-dummy.m */; };
 		10749C98AB805F9E3BBCFCE8F76B3E01 /* Pods-SwiftUILazyGridView_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E0D787835EEB005E7ADFDB37F840E689 /* Pods-SwiftUILazyGridView_Example-dummy.m */; };
+		2446BD32DD32DAF05D0F7838D96093D6 /* SwiftUILazyGridView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A9004901F4A7BC8999E47028515724E0 /* SwiftUILazyGridView-dummy.m */; };
 		3830DCB2DBDA77618E0785CE94352190 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		44A5D67B97C091618AA22D27DC34147C /* LazyGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318CA8BB25A8F5D1349DE96837A7D6BC /* LazyGridView.swift */; };
 		61B6216190CA18B0FFD0D664A8A2D9DB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		9B5A6763CFE799BF71E30F6B3FD0A1FD /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97A11C9274ED1808CF9864F949978DF /* ReplaceMe.swift */; };
 		A3F8830CFAC7C6BE24E279B78A227844 /* Pods-SwiftUILazyGridView_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BA0BBF2312C09E44ECFCAA9005522A19 /* Pods-SwiftUILazyGridView_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AEEDFF58DCF09FB5777D5A556266CCA1 /* Pods-SwiftUILazyGridView_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D8EB6EF8F696A59BED7700D158A3DA0 /* Pods-SwiftUILazyGridView_Tests-dummy.m */; };
-		C3775E5C3FE1DDEE4BD74D0B417F9319 /* SwiftUILazyGridView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3720607C206C54BBA6F8E4AB02E70C83 /* SwiftUILazyGridView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C3775E5C3FE1DDEE4BD74D0B417F9319 /* SwiftUILazyGridView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 61B425BE4F713BBB5142309C5EED717B /* SwiftUILazyGridView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DF7B95D9B5659D3C6A1CA27340F12EF3 /* Pods-SwiftUILazyGridView_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E15301D8B4E9CE168877C0F754B14429 /* Pods-SwiftUILazyGridView_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E5949DE1C595B724AAA5D3CC02082773 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 /* End PBXBuildFile section */
@@ -38,38 +38,38 @@
 
 /* Begin PBXFileReference section */
 		02ECD3FD4EB62F140E7C9BD5FA94E349 /* Pods-SwiftUILazyGridView_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwiftUILazyGridView_Example-frameworks.sh"; sourceTree = "<group>"; };
-		09A5B18C08A124B0DC4E4C094C04882D /* SwiftUILazyGridView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftUILazyGridView.release.xcconfig; sourceTree = "<group>"; };
+		113F241898D2C4C0B17E9BB3CFEBF182 /* SwiftUILazyGridView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftUILazyGridView.modulemap; sourceTree = "<group>"; };
+		11E35BF2000AAA2EFBBAE76B68BD1CEC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		186AD9A999C037B7A1CBDD66BEE6A0C6 /* Pods-SwiftUILazyGridView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftUILazyGridView_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		26254E71AC1E02DB31710E1782682116 /* Pods-SwiftUILazyGridView_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SwiftUILazyGridView_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		2AB92F5C1BE5A6AEF18D09665B861C5D /* Pods-SwiftUILazyGridView_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SwiftUILazyGridView_Tests-Info.plist"; sourceTree = "<group>"; };
 		2D8EB6EF8F696A59BED7700D158A3DA0 /* Pods-SwiftUILazyGridView_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SwiftUILazyGridView_Tests-dummy.m"; sourceTree = "<group>"; };
+		318CA8BB25A8F5D1349DE96837A7D6BC /* LazyGridView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LazyGridView.swift; path = SwiftUILazyGridView/Classes/LazyGridView.swift; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		362474C7ECD23BE3BBE9D510CC593BE8 /* Pods-SwiftUILazyGridView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SwiftUILazyGridView_Example.modulemap"; sourceTree = "<group>"; };
-		3720607C206C54BBA6F8E4AB02E70C83 /* SwiftUILazyGridView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftUILazyGridView-umbrella.h"; sourceTree = "<group>"; };
-		38937A4ADA5484FDADFA49824B26278F /* SwiftUILazyGridView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftUILazyGridView.modulemap; sourceTree = "<group>"; };
-		3A348FB540323135B24B301E5399250F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		4945576BFE6304749D26DC32E5E71067 /* SwiftUILazyGridView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SwiftUILazyGridView-Info.plist"; sourceTree = "<group>"; };
+		430C4622621181DD631BFFF1400ECF9F /* SwiftUILazyGridView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftUILazyGridView.release.xcconfig; sourceTree = "<group>"; };
 		4E4E6B21F5BC7253A91840493C2D2C57 /* Pods-SwiftUILazyGridView_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SwiftUILazyGridView_Tests.modulemap"; sourceTree = "<group>"; };
+		55B6C22E296DD6695733ED76B9357284 /* SwiftUILazyGridView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = SwiftUILazyGridView.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		5EF7FA9756025B54E74C0F1D605BFBB8 /* Pods-SwiftUILazyGridView_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SwiftUILazyGridView_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		67871F4B324465DFABF481D73FB1D345 /* Pods_SwiftUILazyGridView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SwiftUILazyGridView_Tests.framework; path = "Pods-SwiftUILazyGridView_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		61B425BE4F713BBB5142309C5EED717B /* SwiftUILazyGridView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftUILazyGridView-umbrella.h"; sourceTree = "<group>"; };
+		67871F4B324465DFABF481D73FB1D345 /* Pods_SwiftUILazyGridView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftUILazyGridView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		68CE030BE2B74655B227BD6EE90B7656 /* Pods-SwiftUILazyGridView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftUILazyGridView_Example.release.xcconfig"; sourceTree = "<group>"; };
 		6D2BEE7C1E1BCEC758A396C0378F8E08 /* Pods-SwiftUILazyGridView_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SwiftUILazyGridView_Example-Info.plist"; sourceTree = "<group>"; };
-		6F714C5A680E696CF11B27CDB9910ABE /* SwiftUILazyGridView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftUILazyGridView-prefix.pch"; sourceTree = "<group>"; };
-		8959FECBA323873B8A1DA35BD5AA65D5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		8E27D8BB5E8E2E880C7A459ED0444052 /* SwiftUILazyGridView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftUILazyGridView.debug.xcconfig; sourceTree = "<group>"; };
 		94EDEF5A035B57C71D3BDC92650BF2B9 /* Pods-SwiftUILazyGridView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftUILazyGridView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		99D1769F18335438B61C5CE60ECABF25 /* Pods_SwiftUILazyGridView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SwiftUILazyGridView_Example.framework; path = "Pods-SwiftUILazyGridView_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9A7162B902D269D907C496C78A6AD382 /* SwiftUILazyGridView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftUILazyGridView.framework; path = SwiftUILazyGridView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9CF47CC1ED198994D074639C6AF5D799 /* SwiftUILazyGridView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = SwiftUILazyGridView.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A1C23590B50DAD843F3DA8B72D386C98 /* SwiftUILazyGridView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftUILazyGridView-dummy.m"; sourceTree = "<group>"; };
+		99D1769F18335438B61C5CE60ECABF25 /* Pods_SwiftUILazyGridView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftUILazyGridView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A7162B902D269D907C496C78A6AD382 /* SwiftUILazyGridView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftUILazyGridView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A9004901F4A7BC8999E47028515724E0 /* SwiftUILazyGridView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftUILazyGridView-dummy.m"; sourceTree = "<group>"; };
 		B048A631CAF5256FAAEDDB737B1218C2 /* Pods-SwiftUILazyGridView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftUILazyGridView_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		B55FAABDFAE73E82D1604452D3CEC1F0 /* SwiftUILazyGridView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SwiftUILazyGridView-Info.plist"; sourceTree = "<group>"; };
 		BA0BBF2312C09E44ECFCAA9005522A19 /* Pods-SwiftUILazyGridView_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SwiftUILazyGridView_Tests-umbrella.h"; sourceTree = "<group>"; };
 		C6369F4526C819F978FA51916F7A41B7 /* Pods-SwiftUILazyGridView_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SwiftUILazyGridView_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		D97A11C9274ED1808CF9864F949978DF /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = SwiftUILazyGridView/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
 		E0D787835EEB005E7ADFDB37F840E689 /* Pods-SwiftUILazyGridView_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SwiftUILazyGridView_Example-dummy.m"; sourceTree = "<group>"; };
 		E15301D8B4E9CE168877C0F754B14429 /* Pods-SwiftUILazyGridView_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SwiftUILazyGridView_Example-umbrella.h"; sourceTree = "<group>"; };
-		F10355F03780AA86C2B00F989B3A8518 /* SwiftUILazyGridView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftUILazyGridView.debug.xcconfig; sourceTree = "<group>"; };
+		E702B20244EA9225AB43E6B7E36B4047 /* SwiftUILazyGridView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftUILazyGridView-prefix.pch"; sourceTree = "<group>"; };
 		F64C3B68F938DCBC6F165ADB53D688AE /* Pods-SwiftUILazyGridView_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SwiftUILazyGridView_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		FC683D75F76002F3A47947ACC82BD354 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,20 +116,10 @@
 			path = "Target Support Files/Pods-SwiftUILazyGridView_Tests";
 			sourceTree = "<group>";
 		};
-		576497066FFF6C7A0135C6E80C330EDB /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				8959FECBA323873B8A1DA35BD5AA65D5 /* LICENSE */,
-				3A348FB540323135B24B301E5399250F /* README.md */,
-				9CF47CC1ED198994D074639C6AF5D799 /* SwiftUILazyGridView.podspec */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
 		5CA562621CFF20D9059B96521123C788 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				EB7C66825ADF370A13D70AB0F9F0AC1F /* SwiftUILazyGridView */,
+				C722ECC7C374549C08699D27FB3F3ED8 /* SwiftUILazyGridView */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
@@ -153,6 +143,21 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		AC1FF9638DD4297FC0EEDB587AC0E423 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				113F241898D2C4C0B17E9BB3CFEBF182 /* SwiftUILazyGridView.modulemap */,
+				A9004901F4A7BC8999E47028515724E0 /* SwiftUILazyGridView-dummy.m */,
+				B55FAABDFAE73E82D1604452D3CEC1F0 /* SwiftUILazyGridView-Info.plist */,
+				E702B20244EA9225AB43E6B7E36B4047 /* SwiftUILazyGridView-prefix.pch */,
+				61B425BE4F713BBB5142309C5EED717B /* SwiftUILazyGridView-umbrella.h */,
+				8E27D8BB5E8E2E880C7A459ED0444052 /* SwiftUILazyGridView.debug.xcconfig */,
+				430C4622621181DD631BFFF1400ECF9F /* SwiftUILazyGridView.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/SwiftUILazyGridView";
+			sourceTree = "<group>";
+		};
 		B3F0001BDBDA774F351C68E75E1C8AA2 /* Pods-SwiftUILazyGridView_Example */ = {
 			isa = PBXGroup;
 			children = (
@@ -170,27 +175,33 @@
 			path = "Target Support Files/Pods-SwiftUILazyGridView_Example";
 			sourceTree = "<group>";
 		};
-		BDF87571315C3583AA0DF23136DDF468 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				38937A4ADA5484FDADFA49824B26278F /* SwiftUILazyGridView.modulemap */,
-				A1C23590B50DAD843F3DA8B72D386C98 /* SwiftUILazyGridView-dummy.m */,
-				4945576BFE6304749D26DC32E5E71067 /* SwiftUILazyGridView-Info.plist */,
-				6F714C5A680E696CF11B27CDB9910ABE /* SwiftUILazyGridView-prefix.pch */,
-				3720607C206C54BBA6F8E4AB02E70C83 /* SwiftUILazyGridView-umbrella.h */,
-				F10355F03780AA86C2B00F989B3A8518 /* SwiftUILazyGridView.debug.xcconfig */,
-				09A5B18C08A124B0DC4E4C094C04882D /* SwiftUILazyGridView.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/SwiftUILazyGridView";
-			sourceTree = "<group>";
-		};
 		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
 				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		C66DA505619373897467725EAAF3AB33 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				FC683D75F76002F3A47947ACC82BD354 /* LICENSE */,
+				11E35BF2000AAA2EFBBAE76B68BD1CEC /* README.md */,
+				55B6C22E296DD6695733ED76B9357284 /* SwiftUILazyGridView.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		C722ECC7C374549C08699D27FB3F3ED8 /* SwiftUILazyGridView */ = {
+			isa = PBXGroup;
+			children = (
+				318CA8BB25A8F5D1349DE96837A7D6BC /* LazyGridView.swift */,
+				C66DA505619373897467725EAAF3AB33 /* Pod */,
+				AC1FF9638DD4297FC0EEDB587AC0E423 /* Support Files */,
+			);
+			name = SwiftUILazyGridView;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -210,17 +221,6 @@
 				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		EB7C66825ADF370A13D70AB0F9F0AC1F /* SwiftUILazyGridView */ = {
-			isa = PBXGroup;
-			children = (
-				D97A11C9274ED1808CF9864F949978DF /* ReplaceMe.swift */,
-				576497066FFF6C7A0135C6E80C330EDB /* Pod */,
-				BDF87571315C3583AA0DF23136DDF468 /* Support Files */,
-			);
-			name = SwiftUILazyGridView;
-			path = ../..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,7 +277,7 @@
 			buildConfigurationList = 74CAAB6852F25B36836AAD7065D7B44E /* Build configuration list for PBXNativeTarget "SwiftUILazyGridView" */;
 			buildPhases = (
 				6C23ECECBAADBB9FEE5DE0941C459327 /* Headers */,
-				0B3C875A48BFDE64306828D9FB5D4096 /* Sources */,
+				5B0220470B731266EAC79F405DFEA9F3 /* Sources */,
 				43911DD9B7A3CE58EF207397B3324A3F /* Frameworks */,
 				60EECB0EEA7FDFF5216BFBFFD64E2363 /* Resources */,
 			);
@@ -317,6 +317,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
 				LastUpgradeCheck = 1100;
+				TargetAttributes = {
+					2C8F3611869DB0BF0A4191AAA258B3D0 = {
+						DevelopmentTeam = 9JLGJ2CLBX;
+					};
+				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -363,20 +368,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0B3C875A48BFDE64306828D9FB5D4096 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9B5A6763CFE799BF71E30F6B3FD0A1FD /* ReplaceMe.swift in Sources */,
-				05CF2E7F7AF842D27143EFFC29190C78 /* SwiftUILazyGridView-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		41C439638B1426176FEE4E3BA99E8964 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				10749C98AB805F9E3BBCFCE8F76B3E01 /* Pods-SwiftUILazyGridView_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B0220470B731266EAC79F405DFEA9F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44A5D67B97C091618AA22D27DC34147C /* LazyGridView.swift in Sources */,
+				2446BD32DD32DAF05D0F7838D96093D6 /* SwiftUILazyGridView-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,18 +416,19 @@
 			baseConfigurationReference = 94EDEF5A035B57C71D3BDC92650BF2B9 /* Pods-SwiftUILazyGridView_Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 9JLGJ2CLBX;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-SwiftUILazyGridView_Tests/Pods-SwiftUILazyGridView_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-SwiftUILazyGridView_Tests/Pods-SwiftUILazyGridView_Tests.modulemap";
@@ -441,7 +447,7 @@
 		};
 		2DB5C485CED72BFA4DA5820403077194 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 09A5B18C08A124B0DC4E4C094C04882D /* SwiftUILazyGridView.release.xcconfig */;
+			baseConfigurationReference = 430C4622621181DD631BFFF1400ECF9F /* SwiftUILazyGridView.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -455,7 +461,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/SwiftUILazyGridView/SwiftUILazyGridView-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/SwiftUILazyGridView/SwiftUILazyGridView-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/SwiftUILazyGridView/SwiftUILazyGridView.modulemap";
 				PRODUCT_MODULE_NAME = SwiftUILazyGridView;
@@ -487,7 +493,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-SwiftUILazyGridView_Example/Pods-SwiftUILazyGridView_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-SwiftUILazyGridView_Example/Pods-SwiftUILazyGridView_Example.modulemap";
@@ -506,7 +512,7 @@
 		};
 		7D7DEFFB53364E8BA3B6FD5FA0153DC6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F10355F03780AA86C2B00F989B3A8518 /* SwiftUILazyGridView.debug.xcconfig */;
+			baseConfigurationReference = 8E27D8BB5E8E2E880C7A459ED0444052 /* SwiftUILazyGridView.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -520,7 +526,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/SwiftUILazyGridView/SwiftUILazyGridView-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/SwiftUILazyGridView/SwiftUILazyGridView-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/SwiftUILazyGridView/SwiftUILazyGridView.modulemap";
 				PRODUCT_MODULE_NAME = SwiftUILazyGridView;
@@ -588,8 +594,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -600,18 +605,19 @@
 			baseConfigurationReference = 186AD9A999C037B7A1CBDD66BEE6A0C6 /* Pods-SwiftUILazyGridView_Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 9JLGJ2CLBX;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-SwiftUILazyGridView_Tests/Pods-SwiftUILazyGridView_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-SwiftUILazyGridView_Tests/Pods-SwiftUILazyGridView_Tests.modulemap";
@@ -709,7 +715,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-SwiftUILazyGridView_Example/Pods-SwiftUILazyGridView_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-SwiftUILazyGridView_Example/Pods-SwiftUILazyGridView_Example.modulemap";
