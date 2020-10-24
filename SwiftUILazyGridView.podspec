@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'SwiftUILazyGridView'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'Show a grid that lets items be lazily processed before being displayed'
 
   s.description      = <<-DESC
@@ -18,7 +18,7 @@ process if needed and provide a view builder closure. You're done!
   s.screenshots      = 'https://raw.githubusercontent.com/Thisura98/swiftui-lazy-gridview/main/Documentation/main.png'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'thisura1998@gmail.com' => 'thisura@bhasha.lk' }
-  s.source           = { :git => 'https://github.com/thisura1998@gmail.com/SwiftUILazyGridView.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/Thisura98/swiftui-lazy-gridview.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.swift_version = '4.0'
