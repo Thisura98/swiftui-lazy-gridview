@@ -10,7 +10,11 @@ import Foundation
 
 public class GridViewModel<Input: Any, Output: Any>: ObservableObject{
     
-    var gridViewItems: [GridViewItemModel<Input, Output>] = []
+    public typealias ItemModel = GridViewItemModel<Input, Output>
+    public typealias ItemView = GridViewItem<Input, Output>
+    public typealias ProcessFunction = ((_ model: Input, _ callback: @escaping ((_ processed: Output?) -> Void)) -> Void)
+    
+    var gridViewItems: [ItemModel] = []
     var initializedOnce: Bool = false
     
     private var currentProcessingOperation: DispatchWorkItem?
@@ -24,7 +28,7 @@ public class GridViewModel<Input: Any, Output: Any>: ObservableObject{
     var galleryViewWidth: CGFloat = 100.0{
         didSet{
             if galleryViewWidth != _previousGalleryWidth{
-                setNeedsViewUpdate();
+                setNeedsViewUpdate()
             }
             _previousGalleryWidth = galleryViewWidth
         }
@@ -32,7 +36,7 @@ public class GridViewModel<Input: Any, Output: Any>: ObservableObject{
     var spacing: CGFloat = 10.0{
         didSet {
             if spacing != _previousSpacing{
-                setNeedsViewUpdate();
+                setNeedsViewUpdate()
             }
             _previousSpacing = spacing
         }
@@ -55,6 +59,9 @@ public class GridViewModel<Input: Any, Output: Any>: ObservableObject{
     @Published var vStackHalfFilledItemCount: Int = 0
     @Published var isProcessing: Bool = false
     @Published var noItemsToShow: Bool = false
+    
+    // internal var processItemBlock: ((_ data: Input) -> Output)!
+    internal var processItemBlock: ProcessFunction!
     
     public init(_ galleryViewWidth: CGFloat, spacing: CGFloat){
         self.galleryViewWidth = galleryViewWidth
@@ -107,24 +114,64 @@ public class GridViewModel<Input: Any, Output: Any>: ObservableObject{
             }
             
             // Process data items
+            
             for item in s.gridViewItems{
-                item.processData()
+                
+                guard item.processedOutput == nil else {
+                    s.updateItemPropertiesAfterProcess(item, item.processedOutput)
+                    continue
+                }
+                
+                if let inputData = item.data{
+                    
+                    DispatchQueue.main.async {
+                        item.viewState = .loading
+                    }
+                    
+                    // var changeHolder: Output?
+                    
+                    if s.processItemBlock != nil{
+                        // changeHolder = s.processItemBlock(inputData)
+                        s.processItemBlock!(inputData) { [weak self] (processedOut) in
+                            guard let s2 = self else { return }
+                            s2.updateItemPropertiesAfterProcess(item, processedOut)
+                        }
+                    }
+                    else if Output.self == Input.self{
+                        // changeHolder = inputData as? Output
+                        s.updateItemPropertiesAfterProcess(item, inputData as? Output)
+                    }
+                }
             }
         })
         
         DispatchQueue.global().async(execute: currentProcessingOperation!)
     }
     
+    private func updateItemPropertiesAfterProcess(_ item: ItemModel, _ processedValue: Output?){
+        DispatchQueue.main.async {
+            item.processedOutput = processedValue
+            if item.processedOutput != nil{
+                print("Processed, \(processedValue). Content is showing.")
+                item.viewState = .contentShowing
+            }
+            else{
+                print("Processed, \(processedValue), but content is nil. Showing not content.")
+                item.viewState = .noContent
+            }
+        }
+    }
+    
     private func dispatchWorkItemCleanup(){
         currentProcessingOperation = nil
     }
     
-    func setNeedsViewUpdate(){
+    public func setNeedsViewUpdate(){
         guard initComplete else { return }
         processItems()
     }
     
-    internal func getItem(atRow: Int, column: Int) -> GridViewItemModel<Input, Output>?{
+    public  func getItem(atRow: Int, column: Int) -> ItemModel?{
         var index = max(0, atRow * columns)
         index += column
         if index < gridViewItems.count{
@@ -135,19 +182,35 @@ public class GridViewModel<Input: Any, Output: Any>: ObservableObject{
         }
     }
     
-    func addItem(_ item: GridViewItemModel<Input, Output>, at: Int){
-        if at < gridViewItems.count{
-            gridViewItems.insert(item, at: at)
-        }
-        else{
-            gridViewItems.append(item)
-        }
+    public func setItems(_ items: [Input]){
+        self.gridViewItems = items.map({ (i) -> ItemModel in
+            return ItemModel(i, state: .loading)
+        })
         setNeedsViewUpdate()
     }
     
     @discardableResult
-    func removeItem(_ at: Int) -> GridViewItemModel<Input, Output>?{
-        var result: GridViewItemModel<Input, Output>?
+    public func addItem(_ item: Input, at: Int? = nil) -> ItemModel{
+        let itemViewModel = ItemModel(item, state: .loading)
+        if let concreteAt = at{
+            if concreteAt < gridViewItems.count{
+                gridViewItems.insert(itemViewModel, at: concreteAt)
+            }
+            else{
+                gridViewItems.append(itemViewModel)
+            }
+        }
+        else{
+            gridViewItems.append(itemViewModel)
+        }
+        setNeedsViewUpdate()
+        
+        return itemViewModel
+    }
+    
+    @discardableResult
+    public func removeItem(_ at: Int) -> ItemModel?{
+        var result: ItemModel?
         if at < gridViewItems.count{
             result = gridViewItems.remove(at: at)
         }
@@ -162,8 +225,22 @@ public class GridViewModel<Input: Any, Output: Any>: ObservableObject{
         return result
     }
     
+    public func getNumberOfItems() -> Int{
+        return gridViewItems.count
+    }
+    
+    public func getAllItemModels() -> [Input?]{
+        return getAllItems().map { (im) -> Input? in
+            return im.data
+        }
+    }
+    
+    public func getAllItems() -> [ItemModel]{
+        return gridViewItems
+    }
+    
     @discardableResult
-    func adjustWidth(_ to: CGFloat) -> GridViewModel{
+    public func adjustWidth(_ to: CGFloat) -> GridViewModel{
         self.galleryViewWidth = to
         return self
     }

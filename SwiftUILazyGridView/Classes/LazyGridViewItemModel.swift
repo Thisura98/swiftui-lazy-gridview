@@ -15,12 +15,12 @@ public class GridViewItemModel<Input: Any, Output: Any>: ObservableObject{
     }
     
     @Published internal var viewState: ViewState = .loading
-    public var viewBuilderBlock: ((_ data: Output) -> AnyView)!
-    public var processItemBlock: ((_ data: Input) -> Output)!
-    @State public var data: Input?
+    internal var data: Input? = nil
+    @Published internal var processedOutput: Output? = nil
     
-    init(){
-        
+    internal init(_ data: Input?, state: ViewState){
+        self.data = data
+        self.viewState = state
     }
     
     internal func setSelfStateInMain(_ newState: ViewState){
